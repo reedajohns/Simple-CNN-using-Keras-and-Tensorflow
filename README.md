@@ -6,12 +6,12 @@ We send the Cifar 10 dataset through the network and examine the results.
 
 Before we get into the datasets and their results, let's cover the possible CNN layers we may encounter when building / training
 our CNN. Although we are only using CONV in this project, there are out options:
-1. Convolutional (CONV)
-2. Activation (ACT or RELU)
-3. Pooling (POOL)
-4. Fully connected (FC)
-5. Batch normalization
-6. Dropout (DO)
+1. **Convolutional (CONV)**
+2. **Activation (ACT or RELU)**
+3. **Pooling (POOL)**
+4. **Fully connected (FC)**
+5. **Batch normalization**
+6. **Dropout (DO)**
 
 Stacking a series of these layers in a specific manner yields a CNN. Of these layer types, CONV and FC (and to a lesser extent, BN) 
 are the only layers that contain parameters that are learned during the training process.
