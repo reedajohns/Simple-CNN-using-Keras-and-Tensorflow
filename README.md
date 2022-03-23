@@ -67,6 +67,9 @@ As stated above, the SimpleNet model uses only one convolutional layer.
 The code for this model can be found in 'scripts/fundamentals/neuralnet/simple_net.py' and is essentially created in Keras
 with these lines of code:
 
+The entire model architecture can be summarized as:  
+**INPUT => CONV => RELU => FC**
+
 ```buildoutcfg
     model.add(Conv2D(32, (3, 3), padding="same",
         input_shape=input_shape))
