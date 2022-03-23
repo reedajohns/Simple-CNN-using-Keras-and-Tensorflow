@@ -1,7 +1,7 @@
 # Simple-CNN-using-Keras-and-Tensorflow
 In this project we build a single conv neural network and show the results, and a brief summary of the CNN layer types / options.
 We send the Cifar 10 dataset through the network and examine the results.
-\
+
 ## Description
 
 Before we get into the datasets and their results, let's cover the possible CNN layers we may encounter when building / training
