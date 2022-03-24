@@ -42,6 +42,8 @@ if __name__ == '__main__':
 	ap = argparse.ArgumentParser()
 	ap.add_argument("-o", "--output", required=True,
 		help="path to output loss plot")
+	ap.add_argument("-m", "--model", type=str, default='',
+					help="Path to save model. (doesn't save if not set)")
 	args = vars(ap.parse_args())
 
 	# Load the Cifar 10 dataset from keras
@@ -69,6 +71,11 @@ if __name__ == '__main__':
 	# Train Network
 	print('[INFO] Training the network:')
 	H = model.fit(trainX, trainY, validation_data=(testX, testY), batch_size=batch_size, epochs=num_epochs, verbose=1)
+
+	# Save network model to disk (if set)
+	if args["model"] != '':
+		print("[INFO] Serializing model...")
+		model.save(args["model"])
 
 	# Label names for the dataset
 	labelNames = ["airplane", "automobile", "bird", "cat", "deer",

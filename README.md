@@ -140,7 +140,7 @@ git clone git@github.com:reedajohns/Simple-CNN-using-Keras-and-Tensorflow.git
 
 Open terminal and run either command:
 ```
-python cifar10_simple_cnn.py --output ../media/keras_simple_cnn_cifar10.png
+python cifar10_simple_cnn.py --output ../media/keras_simple_cnn_cifar10.png --model ../models/simpleet_weights.hdf5
 ```
 
 ## Authors
